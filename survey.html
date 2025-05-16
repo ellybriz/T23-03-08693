@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey - John Doe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portifolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="survey.html">Survey</a></li>
+            </ul>
+            <button id="theme-toggle">Toggle Dark Mode</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="survey">
+            <h2>Website Feedback Survey</h2>
+            <form id="survey-form" action="#" method="post">  <p>Please take a moment to provide your feedback.</p>
+
+                <fieldset>
+                    <legend>How would you rate your overall experience?</legend>
+                    <label><input type="radio" name="experience" value="excellent" required> Excellent</label><br>
+                    <label><input type="radio" name="experience" value="good" required> Good</label><br>
+                    <label><input type="radio" name="experience" value="fair" required> Fair</label><br>
+                    <label><input type="radio" name="experience" value="poor" required> Poor</label><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>What aspects of the website did you find useful? (Check all that apply)</legend>
+                    <label><input type="checkbox" name="useful" value="information"> Information</label><br>
+                    <label><input type="checkbox" name="useful" value="design"> Design</label><br>
+                    <label><input type="checkbox" name="useful" value="navigation"> Navigation</label><br>
+                    <label><input type="checkbox" name="useful" value="contact"> Contact Form</label><br>
+                </fieldset>
+
+                <label for="comments">Comments:</label><br>
+                <textarea id="comments" name="comments" rows="5" cols="50"></textarea><br>
+
+                <button type="submit">Submit Feedback</button>
+            </form>
+            <div id="survey-status"></div>  </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 John Doe. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

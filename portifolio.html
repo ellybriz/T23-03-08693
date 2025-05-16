@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - John Doe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portifolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="survey.html">Survey</a></li>
+            </ul>
+            <button id="theme-toggle">Toggle Dark Mode</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="portfolio">
+            <h2>My Projects</h2>
+            <div class="portfolio-grid">
+                <article class="project">
+                    <img src="./pictures/african-american-husband-holding-pencil-making-calculations-calculator-helping-his-wife-with-paperwork.jpg" alt="Project 1" width="300">
+                    <h3>E-commerce Website</h3>
+                    <p>A fully functional e-commerce site built with React and Node.js.</p>
+                    <button class="details-btn" data-project="project1">Show Details</button>
+                    <div id="project1-details" class="project-details">
+                        <p>Detailed description... <a href="#">Link to project</a></p>
+                    </div>
+                </article>
+
+                <article class="project">
+                    <img src="./pictures/SUc2AKndbOJYNtm8S1T2UoAF1fHEYX.jpg" alt="Project 2" width="300">
+                    <h3>Blog Application</h3>
+                    <p>A blog application with user authentication and content management.</p>
+                    <button class="details-btn" data-project="project2">Show Details</button>
+                    <div id="project2-details" class="project-details">
+                        <p>Detailed description... <a href="#">Link to project</a></p>
+                    </div>
+                </article>
+
+                <article class="project">
+                    <img src="./pictures/side-view-people-travel-agency-office.jpg" alt="Project 3" width="300">
+                    <h3>Portfolio Website (This one!)</h3>
+                    <p>My personal portfolio website to showcase my skills and projects.</p>
+                    <button class="details-btn" data-project="project3">Show Details</button>
+                    <div id="project3-details" class="project-details">
+                        <p>Built with HTML, CSS, and JavaScript. Demonstrates responsive design and interactivity.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 John Doe. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
